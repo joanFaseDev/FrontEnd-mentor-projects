@@ -7,4 +7,6 @@ This webpage exists for the sole purpose of hosting my projects from [Frontend M
  ![Image](screenshot_QRcode.png)
  [Project Description and Overview here](https://github.com/joanFaseDev/FrontEnd-mentor-projects/tree/master/1.QRCode)
 
-
+## Project.2 Product Preview Card - HTML & CSS only
+ ![Image](screenshot_ProductPreviewCard.png)
+ [Project Description and Overview here](https://github.com/joanFaseDev/FrontEnd-mentor-projects/tree/master/2.ProductPreviewCard)
