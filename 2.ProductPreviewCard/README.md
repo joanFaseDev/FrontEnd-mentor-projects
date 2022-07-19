@@ -1,92 +1,69 @@
-# Frontend Mentor - Product preview card component
+# Frontend Mentor - Product preview card component solution
 
-![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this product preview card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](./images/screenshot_ProductPreviewCard.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Solution GitHub](https://github.com/joanFaseDev/FrontEnd-mentor-projects/tree/master/2.ProductPreviewCard)
+- Live Site URL: [GitPage](https://joanfasedev.github.io/FrontEnd-mentor-projects/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+First and foremost, english isn't my first language so please forgive me for any mispellings or grammatical errors.
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+This challenge was about building a responsive product preview card. Being an aspiring front-end developper, i don't really have a method and my range of skills is quite limited but i figured i'll build the mobile version first because it seems easier to handle (there's less space to cover which means there's also less opportunities to screw up). I started out by creating some HTML elements i felt were needed (image, paragraph and button) then i added a couple of divs to act as containers because i pretty much decided by then that i will use flexbox to handle my card's layout. I didn't think much about it which was a big mistake (which i noticed as usual way later).
 
-## Building your project
+Once i deemed the HTML part satisfying, i worked on the Css part. I choose to use pixels for the width's container because i knew that a lot of things would be relative to this container and i felt that it will be way more easier to handle absolute units that relative ones. For all the others elements, i really tried to focus on rem mainly because even if it's a relative unit its value is almost always constant which appears very beginner friendly to me. I didn't set a height value because i read it was a bad habit and could potentially create overflow. Instead i created height where it was needed by using padding.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Overall the mobile design seemed like something i could manage. The only difficulty was the barred price and the cart icon. I tried to solve the first one by using the superscript tag but, even if the result was good, i felt the element wasn't made to be used like that so in the end i used _position: relative_ and some offset. I couldn't reproduce the blur effect though (i tried to play on opacity through the _text-decoration-color_ property but to no avail).
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Then came the desktop design part which is the moment where i realized that the image used by the mobile version was different that the image used by the desktop one. Usually i would have fixed that with JavaScript but the challenge was limited to HTML/CSS so i tried to find useful ressources and ended up learning about and using the _picture_ and _source_ html elements which have very good synergy with media queries.
 
-## Deploying your project
+Finally i kept most of the css rules i wrote for the mobile design and changed my container in grid to assign each element to a specific area through rows and columns. Clearly it isn't perfect and there's probably a ton of ways to do this faster and better but the result seems pretty close to me and i thought i had spend enough time on that project and it was the moment to move on.
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### Built with
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- HTML5 (no semantic elements here)
+- CSS + Grid
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### What I learned
 
-## Create a custom `README.md`
+First and foremost, i realized the importance of planning at least in some ways before any actual coding. Had i done that here, i would have find out about the two different images needed and it would have saved me a lot of cold sweat.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+I also learned about the _<picture>_ and _<source>_ HTML elements that i never used or heard about before. Still not sure i used them the right way but it felt pretty cool right then.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+Finally i realized that the same design can be displayed in very unique way on two different screens. There was a moment during this project where i honestly believed i didn't used the right colors. Took me a little while to understand that it was just my desktop screen whose render where very different from my laptop one.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### Continued development
 
-## Submitting your solution
+As i mentionned during the first project, i wish to train basics concepts of CSS. Things like positionning, length units, color systems, some layout global rules if there is. I see a lot of people using and talking about frameworks, preprocessor and things like that but i feel like i don't need them at the moment. Those are tools that seems really useful on bigger projects but that won't help at my level and worse, won't actually do anything to improve my knowledge of CSS.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## Author
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+- Website - [Jordan Falaise](https://joanfasedev.github.io/FrontEnd-mentor-projects/)
+- Frontend Mentor - [@joanFaseDev](https://www.frontendmentor.io/profile/joanFaseDev)

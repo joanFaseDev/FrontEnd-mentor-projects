@@ -45,6 +45,15 @@ svg {
 
 .item__button {
   font-family: "Montserrat", sans-serif;
+  transition: background-color 1s cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+.item__button:hover {
+  background-color: hsl(158, 35%, 26%);
+}
+
+.item__button:focus {
+  background-color: hsl(156, 35%, 17%);
 }
 
 .item__price {
@@ -65,6 +74,7 @@ svg {
 }
 
 .text--name {
+  color: hsl(212, 21%, 14%);
   font-family: "Fraunces", serif;
   font-size: 2rem;
   line-height: 1;
