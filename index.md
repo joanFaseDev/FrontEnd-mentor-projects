@@ -5,6 +5,6 @@ This webpage exists for the sole purpose of hosting my projects from [Frontend M
 
 ## Project.1 QR Code component - HTML & CSS only
  ![Image](screenshot_QRcode.png)
- [Project Description and Overview here](https://github.com/joanFaseDev/QRCode-component)
+ [Project Description and Overview here](https://github.com/joanFaseDev/FrontEnd-mentor-projects/tree/master/1.QRCode)
 
 
