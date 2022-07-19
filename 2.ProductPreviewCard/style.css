@@ -101,3 +101,52 @@ svg {
   padding: 1rem;
   border-radius: 0.5rem;
 }
+
+@media (min-width: 700px) {
+  .container {
+    min-width: 580px;
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 20%);
+    padding-bottom: 0;
+  }
+
+  .item {
+    padding: 1rem 1.8rem 0;
+  }
+
+  .item__img {
+    height: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .item__picture {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+  }
+
+  .item-1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+
+  .item-2 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    align-self: center;
+  }
+
+  .item-3 {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    padding-top: 0.5rem;
+  }
+
+  /* .item__button {
+    position: relative;
+    bottom: 2rem;
+  } */
+}

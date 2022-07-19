@@ -22,12 +22,18 @@
   </head>
   <body>
     <div class="container">
-      <img
-        class="item__img"
-        src="images/image-product-mobile.jpg"
-        alt="Photo of a Chanel Bottle"
-      />
-      <div class="item">
+      <picture class="item__picture">
+        <source
+          srcset="images/image-product-desktop.jpg"
+          media="(min-width: 700px)"
+        />
+        <img
+          class="item__img"
+          src="images/image-product-mobile.jpg"
+          alt="Photo of a Chanel Bottle"
+        />
+      </picture>
+      <div class="item item-1">
         <p class="item__text text--product">Perfume</p>
         <p class="item__text text--name">Gabrielle Essence Eau De Parfum</p>
         <p class="item__text text--description">
@@ -35,11 +41,11 @@
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
       </div>
-      <div class="item">
+      <div class="item item-2">
         <span class="item__price price--sale">$149.99</span
         ><span class="item__price price--nosale">$169.99</span>
       </div>
-      <div class="item">
+      <div class="item item-3">
         <button class="item__button" type="submit">
           <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
             <path
