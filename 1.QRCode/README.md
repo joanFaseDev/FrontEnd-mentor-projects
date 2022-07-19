@@ -21,8 +21,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Link GitHub](https://github.com/joanFaseDev/QRCode-component)
-- Live Site URL: [Website](https://joanfasedev.github.io/QRCode-component/)
+- Solution URL: [Link GitHub](https://joanfasedev.github.io/FrontEnd-mentor-projects/)
+- Live Site URL: [Website](https://joanfasedev.github.io/FrontEnd-mentor-projects/)
 
 ## My process
 
@@ -63,5 +63,5 @@ If you read until that point, well thanks a lot! I didn't expect feedbacks on th
 
 ## Author
 
-- Website - [Jordan](https://joanfasedev.github.io/QRCode-component/)
+- Website - [Jordan](https://joanfasedev.github.io/FrontEnd-mentor-projects/)
 - Frontend Mentor - [@joanfaseDev](https://www.frontendmentor.io/profile/joanFaseDev)
