@@ -61,7 +61,7 @@ Finally i realized that the same design can be displayed in very unique way on t
 
 ### Continued development
 
-As i mentionned during the first project, i wish to train basics concepts of CSS. Things like positionning, length units, color systems, some layout global rules if there is. I see a lot of people using and talking about frameworks, preprocessor and things like that but i feel like i don't need them at the moment. Those are tools that seems really useful on bigger projects but that won't help at my level and worse, won't actually do anything to improve my knowledge of CSS.
+As i mentionned during the first project, i wish to train basic concepts of CSS. Things like positionning, length units, color systems, some layout global rules if there is. I see a lot of people using and talking about frameworks, preprocessor and things like that but i feel like i don't need them at the moment. Those are tools that seems really useful on bigger projects but that won't help at my level and worse, won't actually do anything to improve my knowledge of CSS.
 
 ## Author
 
